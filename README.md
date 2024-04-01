@@ -1,1 +1,1 @@
-Student app with Jenkinsfile and as new project.
+Student app with Jenkinsfile; Copied as new a project in this repo.
