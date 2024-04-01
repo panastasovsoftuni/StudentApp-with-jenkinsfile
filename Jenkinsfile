@@ -7,7 +7,13 @@ pipeline {
                 sh 'npm install'
             }
         }
-        stage('NPM Run Tests') {
+
+        stage('NPM Audit') {
+            steps {
+                sh 'npm audit'
+            }
+        }  
+        stage('Run Integration Tests') {
             steps {
                 sh 'npm run test'
             }
